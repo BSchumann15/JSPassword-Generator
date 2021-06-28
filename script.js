@@ -26,9 +26,7 @@ function passwordchoices() {
   var gotSpecial = confirm("Would you like special letters in your password?")
   var gotNumber = confirm("Would you like numbers in your password?")
   
-  
-  
-  
+    
   if (
       gotLower === false&&
       gotUpper === false&&
@@ -96,8 +94,7 @@ function passwordchoices() {
   
   return result.join("")
   }
-  
-var generateBtn = document.querySelector('#generate');
+  var generateBtn = document.querySelector('#generate');
 
  
 function writePassword() {
@@ -107,5 +104,4 @@ function writePassword() {
   passwordText.value = password;
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener('click', writePassword);
+  generateBtn.addEventListener('click', writePassword);
